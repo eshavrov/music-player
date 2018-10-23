@@ -1,0 +1,94 @@
+.player {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background: #111;
+  border-radius: 4px;
+  /* box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,.07),
+    inset 0 1px 16px rgba(0,0,0,.2),
+    inset 0 -1px 1px rgba(0,0,0,.2); */
+}
+
+.player * {
+  user-select: none;
+}
+
+.controls > span {
+  display: block;
+  float: left;
+  color:#ccc;
+  width: 32px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+
+}
+
+.controls > span:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.controls > span:hover {
+  background-color: #1b1b1b;
+  color:#fff;
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,.07),
+    inset 0 1px 16px rgba(0,0,0,.2),
+    inset 0 -1px 1px rgba(0,0,0,.2);
+}
+
+.controls > span:active {
+  color: yellow;
+}
+
+.progress {
+  position: absolute;
+  left: 100px;
+  top: 15px;
+  bottom: 14px;
+  right: 96px;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: inset 0 -1px 0 rgba(190,245,255,.06),
+    inset 0 1px 1px rgba(0,0,0,1),
+    inset 0 1px 10px rgba(0,0,0,.2);
+}
+
+.bar {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  bottom: 6px;
+  right: 6px;
+}
+
+.bar > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10%;
+    border-radius: 4px;
+    background-color: #ddd;
+    box-shadow:  0 2px 2px rgba(0,0,0,.6);
+    transition: background-color linear 800ms;
+}
+
+.bar > div.active {
+  background-color: yellow;
+}
+
+.time {
+  box-sizing: border-box;
+  float:right;
+  width: 96px;
+  height: 48px;
+  line-height: 48px;
+  padding-right: 15px;
+  text-align: right;
+  color: #ddd;
+  font-size: 12px;
+}

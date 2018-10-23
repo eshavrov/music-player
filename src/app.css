@@ -1,0 +1,29 @@
+html, body {
+  background: #193838;
+  width:100%;
+}
+
+.app {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrolbar-track {
+  margin:2px 0 2px;
+  background: #111; 
+  border-radius: 0 4px 4px 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333; 
+}
