@@ -1,3 +1,4 @@
+/* Player  */
 .player {
   position: relative;
   width: 100%;
@@ -66,15 +67,15 @@
 }
 
 .bar > div {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 10%;
-    border-radius: 4px;
-    background-color: #ddd;
-    box-shadow:  0 2px 2px rgba(0,0,0,.6);
-    transition: background-color linear 800ms;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  border-radius: 4px;
+  background-color: #ddd;
+  box-shadow:  0 2px 2px rgba(0,0,0,.6);
+  transition: background-color linear 800ms;
 }
 
 .bar > div.active {
